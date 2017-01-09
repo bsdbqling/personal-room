@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>基督山伯爵</title>
+	</head>
+	<style>
+	*{
+	padding: 0px;
+	margin: 0px;
+}
+body, html{
+	width: 100%;
+	height: 100%;
+	font:bold 24px 隶书;
+}
+ul{
+	list-style-type: none;
+	margin-top: 0px;
+}
+a{
+	text-decoration: none;
+}
+	body{
+		position: relative;
+	}
+	p{
+		color: goldenrod;
+		width: 70%;
+		font-size: 30px;
+		text-indent:2em;
+		text-align: left;
+		margin: 80px auto;
+		display: none;
+	}
+	input{
+		margin-left: 0%;
+		position: absolute;
+		width: 25%;
+		font-size: 25px;
+		font-family: "微软雅黑";
+		text-align: center;
+		background: rgba(130,130,130,0.5);
+		color: white;
+		margin-top: 0px;
+	}
+	#b1{
+		margin-left: 0%;
+		position: absolute;
+	}
+	#b2{
+		margin-left: 25%;
+		position: absolute;
+	}
+	#b3{
+		margin-left: 50%;
+		position: absolute;
+	}
+	#b4{
+		margin-left: 75%;
+		position: absolute;
+	}
+	body{
+		    background-image:url(img/t12.jpg);
+			background-size:cover;
+			background-repeat: no-repeat;			
+	}
+	li{
+		float: left;
+		width: 200px;
+	}
+	</style>
+	<body  id="a">
+			
+	<ul>
+		<li><input type="submit" name="" id="b1" value="作者介绍" onclick="an1()"/></li>
+		<li><input type="submit" name="" id="b2" value="返回主页面" onclick="an2()"/></li>
+		<li>
+			<form action="http://baike.baidu.com/item/%E5%9F%BA%E7%9D%A3%E5%B1%B1%E4%BC%AF%E7%88%B5/6074" method="get" target="_self">
+			<input type="submit" name="" id="b3" value="搜索作者" />
+			</form>
+		</li>
+		<li>
+			<form action="http://yuedu.baidu.com/ebook/78112d8369dc5022abea001b" method="get" target="_self">
+			<input type="submit" name="" id="b4" value="阅读文章" />
+			</form>
+		</li>
+	</ul><br />
+			
+			<p id="p1">
+			《基督山伯爵》是通俗历史小说，法国著名作家大仲马（1802-1870）的代表作。
+			故事讲述19世纪法国皇帝拿破仑“百日王朝”时期，法老号大副爱德蒙·唐泰斯受船长委托，
+			为拿破仑党人送了一封信，遭到两个卑鄙小人和法官的陷害，被打入黑牢。狱友法利亚神甫向他传授各种知识，
+			并在临终前把埋于基督山岛上的一批宝藏的秘密告诉了他。唐泰斯越狱后找到了宝藏，成为巨富，从此化名基督山伯爵
+			（水手森巴），经过精心策划，报答了恩人，惩罚了仇人。充满传奇色彩，奇特新颖，引人入胜。
+		</p>
+		</div>
+
+		<script type="text/javascript">
+		 var dombody = document.getElementById("a");
+		var b1=document.getElementById("b1");
+		var b2=document.getElementById("b2");
+		var p=document.getElementById("p1");
+			function an1(){
+				p.style.display="block"
+				dombody.style.background="url(img/t2.jpg)"
+			}
+			function an2(){
+				p.style.display="none"
+				dombody.style.background="url(img/t12.jpg)"
+			}
+		</script>
+	</body>
+</html>

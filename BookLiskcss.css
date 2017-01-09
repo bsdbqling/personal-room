@@ -1,0 +1,91 @@
+@charset="UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-image:url(img/shu.jpg) ;
+	background-size:cover ;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+.ul1 li>a{
+	color: lightskyblue;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	background-image:url(img/bj.png) ;
+	background-repeat-x: inherit;
+	height: 70px;
+	width: 100%;
+}
+#biaoti,#biaoti2{
+	text-align: center;
+	font-family: "楷体";
+	font-size: 45px;
+	color: rgb(245,47,246);
+}
+#biaoti2{
+	text-align: center;
+	font-size: 60px;
+	color: #000;
+	font-weight: bold;
+	text-shadow:2px 2px 2px rgb(140,140,140);
+}
+.ul1{
+	display: flex;
+	flex-flow: row;
+}
+.ul1>li{
+	flex: 5;
+	height: 2em;
+	background: rgba(30,80,200,0.8);
+	text-align: center;
+
+
+
+
+	font-size: 20px;
+	line-height: 2em;
+
+float: left;
+margin-left: 1px;
+}
+
+.ul1>li>ul{
+	background: rgba(80,80,160,0.6);
+	display: none;
+}
+
+.ul1>li:hover{
+	background:rgba(30,80,250,0.8); 
+}
+
+.ul1>li:hover>ul{
+	display: block;
+}
+
+.ul2>li>a:hover{
+	background: rgba(40,180,40,0.8); 
+
+	font-size: xx-large;
+	width: 85%;
+	height: 1.5em;
+
+	display: inline-block;
+
+	border-radius: 0.5em;
+
+
+	font-weight: bold;
+
+	line-height: 1.5em;
+}
